@@ -14,7 +14,6 @@
     "apollo-link-http": "^1.5.3",
     "apollo-link-schema": "^1.0.6",
     "apollo-link-state": "^0.4.1",
-    "chart.js": "^2.7.2",
     "google-map-react": "^0.34.0",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.8.0",
@@ -55,6 +54,7 @@
     "react-chartjs-2": "^2.7.0",
     "react-dom": "16.3.0",
     "react-router-dom": "4.2.2",
-    "reactstrap": "5.0.0"
+    "reactstrap": "5.0.0",
+    "chart.js": "^2.7.2"
   }
 }
