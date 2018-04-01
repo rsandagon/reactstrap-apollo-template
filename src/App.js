@@ -9,6 +9,21 @@ import ChartContainer from './container/ChartContainer';
 import TableContainer from './container/TableContainer';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false,
+    };
+  }
+
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
+
   render() {
     return (
 
@@ -23,10 +38,10 @@ class App extends React.Component {
                 <a className="navbar-brand " href="/">
                   REACT BOARD
                 </a>
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button onClick={this.toggle} className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className='collapse navbar-collapse' id="navbarResponsive">
+                <div className={`collapse navbar-collapse ${this.state.dropdownOpen ? 'show':''}`} id="navbarResponsive">
                   <SideBar />
                   <TopBar />
                 </div>

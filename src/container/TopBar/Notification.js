@@ -22,7 +22,7 @@ class Notification extends Component {
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle className="nav-link" tag="a">
             <i className="fa fa-fw fa-bell"></i>
-            <span className="d-lg-none">Alerts
+            <span className="d-lg-none  ml-3">Alerts
               <span className="badge badge-pill badge-warning">6 New</span>
             </span>
             <span className="indicator text-warning d-none d-lg-block">
