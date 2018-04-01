@@ -1,7 +1,5 @@
-import './assets/css/vendors/font-awesome.min.css';
 import './assets/css/main.css';
 import './assets/css/sidebar/sidebar.css';
-import './assets/css/polyfill.css';
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';

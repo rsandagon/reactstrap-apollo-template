@@ -14,7 +14,6 @@
     "apollo-link-http": "^1.5.3",
     "apollo-link-schema": "^1.0.6",
     "apollo-link-state": "^0.4.1",
-    "bootstrap": "^4.0.0",
     "google-map-react": "^0.34.0",
     "graphql": "^0.13.2",
     "graphql-tag": "^2.8.0",

@@ -10,17 +10,6 @@
   .top-bar #top-bar-content {
     padding: 0;
     box-shadow: unset; }
-  .top-bar #country {
-    padding-top: 25px; }
-    .top-bar #country .dropdown button {
-      background-color: transparent;
-      font-size: 12px;
-      font-weight: 600;
-      border: 0;
-      text-align: left;
-      box-shadow: unset; }
-    .top-bar #country ul li a {
-      font-size: 12px; }
   .top-bar .top-bar.child {
     display: inline-table;
     width: auto;
