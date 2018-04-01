@@ -17,8 +17,26 @@ import { CachePersistor } from "apollo-cache-persist"
 import { defaults, resolvers } from './graphql/UI';
 
 
+const cache = new InMemoryCache({
+  logger: console.log,
+  loggerEnabled: true,
+});
+
+const persistor = new CachePersistor({
+  cache,
+  storage: window.sessionStorage,
+  debug: true,
+})
+
+const stateLink = withClientState({ resolvers, cache, defaults });
+
+const link = ApolloLink.from([
+  stateLink
+]);
+
+const client = new ApolloClient({ cache, link })
+
 class Root extends Component {
-  
   constructor(props) {
     super(props)
     this.state = {
@@ -32,27 +50,7 @@ class Root extends Component {
   }
 
   render() {
-    const cache = new InMemoryCache({
-      logger: console.log,
-      loggerEnabled: true,
-    });
-    
-    const persistor = new CachePersistor({
-      cache,
-      storage: window.sessionStorage,
-      debug: true,
-    })
-    
-    const stateLink = withClientState({ resolvers, cache, defaults });
-    
-    const link = ApolloLink.from([
-      stateLink
-    ]);
-    
-    const client = new ApolloClient({ cache, link })
-    
     let content = null
-    
     if (!this.state.restored) {
       content = <div>Loading</div>
     } else {
