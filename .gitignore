@@ -3,6 +3,5 @@ node_modules
 dist
 .module-cache
 *.log*
-*.css
 .vscode
 build/
