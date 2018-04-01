@@ -1,0 +1,80 @@
+$top-bar-height: 60px;
+
+.top-bar{
+    //margin-bottom: 10px;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    height: $top-bar-height;
+    position: fixed;
+    border-bottom: solid 1px #ddd;
+    .col-xs-4{
+      padding: 0;
+    }
+  
+    #top-bar-content{
+      padding: 0;
+      box-shadow: unset;
+    }
+  
+    #country{
+      padding-top: 25px;
+      .dropdown {
+        button{
+          background-color: transparent;
+          font-size: 12px;
+          font-weight: 600;
+          border: 0;
+          text-align: left;
+          box-shadow: unset;
+        }
+      }
+      
+      ul li a {
+        font-size: 12px;
+      }
+    }
+  
+    .top-bar.child{
+      display: inline-table;
+      width: auto;
+      color: #222;
+      box-shadow: unset;
+      
+      &.icon{
+        font-size: 24px;
+      }
+  
+      &:active{
+        background-color: #eee;
+      }
+      
+      & > span{
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 20px;
+        color: inherit;
+      }
+    }
+  }
+  
+  .brand-logo {
+    padding: 10px;
+    img {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+  }
+  
+  .avatar{
+    width: 45px;
+    height: 45px;
+    img{
+      margin-top: 8px;
+      border-radius: 100px;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+    }
+  }
