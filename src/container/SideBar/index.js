@@ -10,14 +10,14 @@ class SideBar extends Component {
         icon: "home"
       },
       {
-        name: "Tables",
-        link: "/table",
-        icon: "folder"
-      },
-      {
         name: "Charts",
         link: "/chart",
         icon: "file"
+      },
+      {
+        name: "Tables",
+        link: "/table",
+        icon: "folder"
       }
     ]
   }
