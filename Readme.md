@@ -1,4 +1,4 @@
-# CMS WEB
+# Reactstrap Apollo-Client Template
 
 ## Quick Start
 
